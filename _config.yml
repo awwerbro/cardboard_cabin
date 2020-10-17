@@ -5,7 +5,7 @@ description:
   nl: Band uit Kortrijk. Speelt meestal toffe muziek.
   en: Band from Kortrijk, Belgium. Plays modern traditional music most of the time
   fr: Groupe qui joue la musique traditionelle moderne.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/cardboard_cabin" # the subpath of your site, e.g. /blog/
 url: "https://awwerbro.github.io/cardboard_cabin/" # the base hostname & protocol for your site
 
 plugins:
