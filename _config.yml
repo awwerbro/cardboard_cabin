@@ -6,7 +6,7 @@ description:
   en: Band from Kortrijk, Belgium. Plays modern traditional music most of the time
   fr: Groupe qui joue la musique traditionelle moderne.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "localhost:4000" # the base hostname & protocol for your site
+url: "https://awwerbro.github.io/cardboard_cabin/" # the base hostname & protocol for your site
 
 plugins:
   - jekyll-polyglot
