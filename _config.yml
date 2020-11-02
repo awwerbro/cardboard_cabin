@@ -32,7 +32,7 @@ include: ['_pages']
 
 languages: ["nl", "en", "fr"]
 default_lang: "nl"
-exclude_from_localization: ["javascript", "images", "css", "README.md"]
+exclude_from_localization: ["javascript", "img", "css", "README.md"]
 parallel_localization: false
 lang_from_path: true
 

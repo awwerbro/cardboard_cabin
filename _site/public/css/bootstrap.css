@@ -1104,9 +1104,13 @@ a {
   color: #337ab7;
   text-decoration: none;
 }
+
+a:focus, a:hover {
+    color: #23527c;
+}
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #5f4268;
   text-decoration: underline;
 }
 a:focus {
@@ -5567,14 +5571,14 @@ a.list-group-item-danger.active:focus {
   border-color: #337ab7;
 }
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #337ab7;
+  border-top-color: #fdd39d;
 }
 .panel-primary > .panel-heading .badge {
-  color: #337ab7;
+  color: #fdd39d;
   background-color: #fff;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #337ab7;
+  border-bottom-color: #fdd39d;
 }
 .panel-success {
   border-color: #d6e9c6;

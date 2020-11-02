@@ -16,10 +16,41 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.bg-primary {
+	color:#5f4268;
+	background-color:#fdd39d
+}
+
+a {
+    color: #5f4268;
+}
+
+a:focus, a:hover {
+    color: #5f426899;
+    text-decoration: underline;
+}
+
 .text-vertical-center {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
+}
+
+.header-arrow {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 20%
+}
+
+.arrow-link {
+	color: #fff;
+}
+.arrow-link:hover,
+.arrow-link:focus,
+.arrow-link:active {
+	color: #bbb;
+	text-decoration: none;
 }
 
 .text-vertical-center h1 {
@@ -33,6 +64,11 @@ body {
 .text-left {
     display: table-cell;
     text-align: left;
+    vertical-align: middle;
+}
+
+.link-row {
+    text-align: right;
     vertical-align: middle;
 }
 
@@ -186,6 +222,7 @@ hr.small {
     padding: 50px 0;
     text-align: right;
     vertical-align: middle;
+    color: #5f4268
 }
 
 .listen-item {
@@ -257,4 +294,12 @@ hr.small {
 
 footer {
     padding: 100px 0;
+}
+
+.logo-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  border: 0px;
+
 }
