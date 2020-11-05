@@ -31,7 +31,6 @@ $(function () {
 $(window).scroll(function () {
     let top_section_height = $('#top').height();
     if ($(window).scrollTop() < top_section_height) {
-        console.log(1 - $(window).scrollTop() / top_section_height)
         $("#header-arrow-down").css("opacity", 1 - $(window).scrollTop() / top_section_height);
     }
 });
