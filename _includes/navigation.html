@@ -1,40 +1,45 @@
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
 <nav id="sidebar-wrapper">
-  <ul class="sidebar-nav">
-    <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-    <li class="sidebar-brand">
-      <a href="#top"  onclick = $("#menu-close").click(); >Cardboard Cabin</a>
-    </li>
-    <li>
-      <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-    </li>
-    <li>
-      <a href="#about" onclick = $("#menu-close").click(); >Bio</a>
-    </li>
-    <li>
-      <a href="#listen" onclick = $("#menu-close").click(); >
-	  {% if site.active_lang == 'nl' %}
-				Luister
-	  {% elsif site.active_lang == 'en' %}
-				Listen
-	  {% elsif site.active_lang == 'fr' %}
-				Ecoutez
-	  {% endif %}</a>
-    </li>
-    <li>
-      <a href="#calendar" onclick = $("#menu-close").click(); >	  
-	  {% if site.active_lang == 'nl' %}
-				Kalender
-	  {% elsif site.active_lang == 'en' %}
-				Calendar
-	  {% elsif site.active_lang == 'fr' %}
-				Calendrier
-	  {% endif %}</a>
-    </li>
-    <li>
-      <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-    </li>
-	<li>{% for tongue in site.languages %} <a {% if tongue == site.active_lang %} style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}" onclick = $("#menu-close").click(); >{{ site.language_full[tongue] }} </a> {% endfor %}	</li>
-  </ul> 
-
+    <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+        <li class="sidebar-brand">
+            <a href="#top" onclick=$("#menu-close").click();>Cardboard Cabin</a>
+        </li>
+        <li>
+            <a href="#top" onclick=$("#menu-close").click();>Home</a>
+        </li>
+        <li>
+            <a href="#about" onclick=$("#menu-close").click();>Bio</a>
+        </li>
+        <li>
+            <a href="#listen" onclick=$("#menu-close").click();>
+                {% if site.active_lang == 'nl' %}
+                Luister
+                {% elsif site.active_lang == 'en' %}
+                Listen
+                {% elsif site.active_lang == 'fr' %}
+                Ecoutez
+                {% endif %}</a>
+        </li>
+        <li>
+            <a href="#calendar" onclick=$("#menu-close").click();>
+                {% if site.active_lang == 'nl' %}
+                Kalender
+                {% elsif site.active_lang == 'en' %}
+                Calendar
+                {% elsif site.active_lang == 'fr' %}
+                Calendrier
+                {% endif %}</a>
+        </li>
+        <li>
+            <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+        </li>
+        <li>{% for tongue in site.languages %}
+            <a {% if tongue== site.active_lang %} style="font-weight: bold;" {% endif
+               %}
+               href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}"
+               onclick=$("#menu-close").click();>{{ site.language_full[tongue]
+                }} </a> {% endfor %}
+        </li>
+    </ul>
 </nav>

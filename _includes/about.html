@@ -1,27 +1,29 @@
 <section id="about" class="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-left">
-	  <div class="page">
-          <ul class="list-inline link-row">
-          <li>
-            <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="https://instagram.com/{{ site.instagram_username }}"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-          </li>
-		  </ul>
-	  {% if site.active_lang == 'nl' %}
-		{% include about-nl.html %}
-	  {% elsif site.active_lang == 'en' %}
-		{% include about-en.html %}
-	  {% elsif site.active_lang == 'fr' %}
-		{% include about-fr.html %}
-	  {% endif %}
-	  </div>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-left">
+                <div class="page">
+                    <ul class="list-inline link-row">
+                        <li>
+                            <a href="https://facebook.com/{{ site.facebook_username }}"><i
+                                    class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/{{ site.instagram_username }}"><i
+                                    class="fa fa-instagram fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    {% if site.active_lang == 'nl' %}
+                    {% include about-nl.html %}
+                    {% elsif site.active_lang == 'en' %}
+                    {% include about-en.html %}
+                    {% elsif site.active_lang == 'fr' %}
+                    {% include about-fr.html %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
     </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+    <!-- /.container -->
 </section>

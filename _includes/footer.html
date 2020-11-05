@@ -1,31 +1,35 @@
 <footer class="bg-primary">
-  <div id="contact" class="container">
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
-		 <img src="{{site.baseurl}}/public/img/cardboard-cabin.png" alt="caca_logo" class="logo-center"> 
-        <ul class="list-unstyled">
-          <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-          </li>
-        </ul>
-        <br>
-		<p> |
-  {% for tongue in site.languages %}
-<a {% if tongue == site.active_lang %}style="font-weight: bold;"{% endif %} href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{ tongue }}</a> |
-  {% endfor %}
-</p>
-<br>
-        <ul class="list-inline">
-          <li>
-            <a href="https://facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-          </li>
-          <li>
-            <a href="https://instagram.com/{{ site.instagram_username }}"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-          </li>
+    <div id="contact" class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-center">
+                <img src="{{site.baseurl}}/public/img/cardboard-cabin.png" alt="caca_logo" class="logo-center">
+                <ul class="list-unstyled">
+                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                    </li>
+                </ul>
+                <br>
+                <p> |
+                    {% for tongue in site.languages %}
+                    <a {% if tongue== site.active_lang %}style="font-weight: bold;" {% endif %}
+                       href="{% if tongue == site.default_lang %} {{site.baseurl}}{{page.url}} {% else %} {{site.baseurl}}/{{ tongue }}{{page.url}} {% endif %}">{{
+                        tongue }}</a> |
+                    {% endfor %}
+                </p>
+                <br>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://facebook.com/{{ site.facebook_username }}"><i
+                                class="fa fa-facebook fa-fw fa-3x"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/{{ site.instagram_username }}"><i
+                                class="fa fa-instagram fa-fw fa-3x"></i></a>
+                    </li>
 
-        </ul>
-        <hr class="small">
-        <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
-      </div>
+                </ul>
+                <hr class="small">
+                <p class="text-muted">Copyright &copy; {{ site.copyright }} 20{{ site.time | date: '%y' }}</p>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>
