@@ -1,10 +1,9 @@
 # Site settings
 title: Cardboard Cabin
-email: bookings@cardboardcabin.be
-description: 
-  nl: Band uit Kortrijk. Speelt meestal toffe muziek.
-  en: Band from Kortrijk, Belgium. Plays modern traditional music most of the time
-  fr: Groupe qui joue la musique traditionelle moderne.
+description:
+  nl: "Band uit Kortrijk. Speelt traditionele folk op eigenwijze."
+  en: "Band from Kortrijk, Belgium. Plays modern traditional music most of the time."
+  fr: "Groupe qui joue la musique traditionelle moderne."
 baseurl: "/cardboard_cabin" # the subpath of your site, e.g. /blog/
 url: "https://awwerbro.github.io/cardboard_cabin/" # the base hostname & protocol for your site
 
@@ -21,7 +20,7 @@ instagram_username: cardboardcabin/
 address:
   - line:
   - line:
-  # Feel free to add more lines here 
+  # Feel free to add more lines here
 telephone:
 copyright: Andreas Werbrouck
 
@@ -40,9 +39,6 @@ language_full:
   nl: Nederlands
   en: English
   fr: Français
-  
-# API settings
-google_api_key:
 
 # Build settings
 markdown: kramdown
