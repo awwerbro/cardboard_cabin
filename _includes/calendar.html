@@ -1,0 +1,51 @@
+<section id="calendar" class="calendar">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 text-left">
+                {% if site.active_lang == 'nl' %}
+                <h2>Kalender</h2>
+                {% elsif site.active_lang == 'en' %}
+                <h2>Calendar</h2>
+                {% elsif site.active_lang == 'fr' %}
+                <h2>Calendrier</h2>
+                {% endif %}
+                <hr class="small">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="portfolio-item">
+                            <a href="https://tey.be" target="blank">
+                                <h3>
+                                    {% if site.active_lang == 'nl' %}
+                                    11 november: 't Ey Belsele
+                                    {% elsif site.active_lang == 'en' %}
+                                    November 11: 't Ey Belsele
+                                    {% elsif site.active_lang == 'fr' %}
+                                    11 novembre: 't Ey Belsele
+                                    {% endif %}
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="portfolio-item">
+                            <a href="https://www.keuvelkroegarbeidershuis.be/" target="blank">
+                                <h3>
+                                    {% if site.active_lang == 'nl' %}
+                                    14 december: Keuvelkroeg Arbeidershuis
+                                    {% elsif site.active_lang == 'en' %}
+                                    December 14: Keuvelkroeg Arbeidershuis
+                                    {% elsif site.active_lang == 'fr' %}
+                                    14 decembre: Keuvelkroeg Arbeidershuis
+                                    {% endif %}
+                                </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+</section>

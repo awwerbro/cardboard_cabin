@@ -1,0 +1,9 @@
+# Shouldn't be an issue with only two devs for static page, enables use of different bundler versions
+Gemfile.lock
+
+# Webstorm IDE files
+.idea/
+
+# Vim swap files
+*.swp
+
