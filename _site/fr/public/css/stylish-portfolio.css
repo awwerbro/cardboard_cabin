@@ -36,6 +36,25 @@ a:focus, a:hover {
     vertical-align: middle;
 }
 
+.header-arrow {
+    display: table-cell;
+    text-align: center;
+    vertical-align: bottom;
+    padding-bottom: 5%;
+    opacity: 1;
+}
+
+.arrow-link {
+	color: #fff;
+}
+
+.arrow-link:hover,
+.arrow-link:focus,
+.arrow-link:active {
+	color: #bbb;
+	text-decoration: none;
+}
+
 .text-vertical-center h1 {
     margin: 0;
     padding: 0;
@@ -184,19 +203,24 @@ hr.small {
     background: url(../img/header.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    background-size: cover
+    background-size: cover;
     -o-background-size: cover;
 }
 
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 30px 0;
 }
 
 .about-p {
 	text-align: right
-	
+}
+
+#about-header-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Listen */
@@ -214,75 +238,21 @@ hr.small {
     vertical-align: middle;
 }
 
-/* Callout */
-
-.callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-/* Portfolio */
-
-.portfolio {
+/* Calendar */
+.calendar {
     padding: 50px 0;
-}
-
-.portfolio-item {
-    margin-bottom: 30px;
-}
-
-.img-portfolio {
-    margin: 0 auto;
-}
-
-.img-portfolio:hover {
-    opacity: 0.8;
-}
-
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
-/* Map */
-
-.map {
-    height: 500px;
-}
-
-@media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
-}
-
-/*disable custom maps scrolling behaviour*/
-.scrolloff {
-    pointer-events: none;
 }
 
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 .logo-center {
   margin-left: auto;
   margin-right: auto;
   width: 25%;
-  border: 0px;
+  border: 0;
 
 }
