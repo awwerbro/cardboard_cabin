@@ -31,6 +31,17 @@
                 Calendrier
                 {% endif %}</a>
         </li>
+		
+		<li>
+            <a href="#pics" onclick=$("#menu-close").click();>
+                {% if site.active_lang == 'nl' %}
+                Foto's
+                {% elsif site.active_lang == 'en' %}
+                Photos
+                {% elsif site.active_lang == 'fr' %}
+                Photos
+                {% endif %}</a>
+        </li>
         <li>
             <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
         </li>

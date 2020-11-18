@@ -22,7 +22,7 @@ address:
   - line:
   # Feel free to add more lines here
 telephone:
-copyright: Andreas Werbrouck
+copyright: Flor Delombaerde & Andreas Werbrouck
 
 # Permalinks
 permalink: pretty
@@ -39,6 +39,15 @@ language_full:
   nl: Nederlands
   en: English
   fr: Français
-
+  
+carousel: 
+  - image: public/carousel/image1.jpg
+  - image: public/carousel/image2.jpg
+  - image: public/carousel/image3.jpg
+  - image: public/carousel/image4.jpg
+  - image: public/carousel/image5.jpg
+  - image: public/carousel/image6.jpg
+  - image: public/carousel/image7.jpg
+  
 # Build settings
 markdown: kramdown

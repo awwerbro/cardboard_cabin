@@ -1,12 +1,12 @@
 <section id="about" class="about">
     <div class="container">
         <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-left">
-                <div id="about-header-row" class="row">
-                    <div class="col-lg-8" style="padding-left: 0">
+		
+                <div id="about-header-row">
+                    <div class="col-lg-8 col-lg-offset-1">
                         <h1 style="margin-top: 10px">Cardboard Cabin</h1>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-2 ">
                         <ul class="list-inline link-row">
                             <li>
                                 <a href="https://facebook.com/{{ site.facebook_username }}"><i
@@ -19,7 +19,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="row">
+				<div class="col-lg-10 col-lg-offset-1 text-left">
                     {% if site.active_lang == 'nl' %}
                     {% include about-nl.html %}
                     {% elsif site.active_lang == 'en' %}
@@ -27,8 +27,7 @@
                     {% elsif site.active_lang == 'fr' %}
                     {% include about-fr.html %}
                     {% endif %}
-                </div>
-            </div>
+				</div>
         </div>
         <!-- /.row -->
     </div>
