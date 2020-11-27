@@ -4,8 +4,8 @@ description:
   nl: "Band uit Kortrijk. Speelt traditionele folk op eigenwijze."
   en: "Band from Kortrijk, Belgium. Plays modern traditional music most of the time."
   fr: "Groupe qui joue la musique traditionelle moderne."
-baseurl: "/cardboard_cabin" # the subpath of your site, e.g. /blog/
-url: "https://awwerbro.github.io/cardboard_cabin/" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "https://www.cardboardcabin.be" # the base hostname & protocol for your site
 
 plugins:
   - jekyll-polyglot
