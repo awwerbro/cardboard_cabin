@@ -20,14 +20,29 @@ function getBrowserLanguage() {
 function changeLanguage(language) {
     // Hide all elements
     document.querySelectorAll('[lang]').forEach(function(el) {
+        if (el.tagName.toLowerCase() === 'html') return;
         el.style.display = 'none';
     });
 
     // Show only elements with the selected language
     document.querySelectorAll('[lang="' + language + '"]').forEach(function(el) {
+        if (el.tagName.toLowerCase() === 'html') return;
         el.style.display = '';
     });
 }
+
+// Close mobile nav on link click
+document.addEventListener('DOMContentLoaded', function() {
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link:not(.dropdown-toggle)');
+    var navCollapse = document.getElementById('navbarResponsive');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            if (navCollapse.classList.contains('show')) {
+                new bootstrap.Collapse(navCollapse).hide();
+            }
+        });
+    });
+});
 
 // Initialize the page with the default language
 changeLanguage(getBrowserLanguage());
