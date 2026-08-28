@@ -198,6 +198,50 @@ a:hover {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12) !important;
 }
 
+/* --- Album --- */
+.album-cover {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.album-card {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.album-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.album-card:hover .album-overlay,
+.album-card:focus-visible .album-overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.album-overlay-title {
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.album-overlay-text {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
 /* --- Contact --- */
 .contact-info p {
     font-size: 1.15rem;
